@@ -1,0 +1,26 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular,500);
+body {
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 26.25px;
+  color: $grey;
+}
+h1,
+h2,
+h3 {
+  font-weight: 500;
+  color: $black;
+}
+h1 {
+  font-size: 48px;
+  line-height: 79px;
+}
+h2 {
+  font-size: 32px;
+  line-height: 38px;
+}
+h3 {
+  font-size: 21px;
+  line-height: 25px;
+  color: $white;
+}
