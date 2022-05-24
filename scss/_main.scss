@@ -1,0 +1,30 @@
+.main{
+	background-color: $silver;
+	padding: 83px 0 140px 0;
+	@media (max-width: 1279px) {
+		padding: 45px 0 95px;
+	}
+	&__content{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 131px;
+		@media (max-width: 1279px) {
+			flex-direction: column;
+			gap: 50px;
+		}
+		.main__text-block{
+			width: 540px;
+			display: flex;
+			flex-direction: column;
+			gap: 60px;
+			align-items: flex-start;
+			@media (max-width: 1279px) {
+				width: 322px;
+				text-align: center;
+				align-items: center;
+				gap: 44px;
+		}
+		}
+	}
+}

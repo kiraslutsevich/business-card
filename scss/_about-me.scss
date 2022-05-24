@@ -1,0 +1,13 @@
+.about-me{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 119px 0 100px 0;
+	.text-block__head{
+		margin-bottom: 42px;
+	}
+	
+	@media (max-width: 1279px) {
+		padding: 91px 0 82px 0;
+	}
+}

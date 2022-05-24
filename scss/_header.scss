@@ -1,11 +1,14 @@
 .header{
-position: fixed;
-background: none;
+background: $silver;
 width: 100%;
-	.header__content{
+	&__content{
 		display: flex;
     justify-content: space-around;
     margin: 57px;
+	 @media (max-width: 1279px){
+		justify-content: flex-start;
+		margin: 22px;
+	}
     .header__logo{
       background: none;
     }
@@ -15,7 +18,10 @@ width: 100%;
   display: flex;
   align-items: center;
   gap: 42px;
-  .header-menu__elem{
+  @media (max-width: 1279px){
+	  display: none;
+  }
+  &__elem{
     color: $black;
     text-transform: uppercase;
     &:first-child{
@@ -31,13 +37,4 @@ width: 100%;
       text-decoration: underline;
     }
   }
-}
-
-//______________breakpoints
-
-@media (max-width: 1279px) {
-  .header-menu{
-    display: none;
-  }
-
 }
