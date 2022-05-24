@@ -10,7 +10,6 @@
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -118,20 +117,52 @@ h3 {
   color: #FFFFFF;
 }
 
-.header {
-  position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-[class*="__container"] {
-  max-width: 1150px;
-  max-height: 100%;
-  margin: 0px auto;
-}
-
 .wrapper {
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
   min-height: 100%;
+  min-width: 100%;
+}
+
+.header {
+  position: fixed;
+  background: none;
+  width: 100%;
+}
+.header .header__content {
+  display: flex;
+  justify-content: space-around;
+  margin: 57px;
+}
+.header .header__content .header__logo {
+  background: none;
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+  gap: 42px;
+}
+.header-menu .header-menu__elem {
+  color: #000000;
+  text-transform: uppercase;
+}
+.header-menu .header-menu__elem:first-child {
+  color: #34547A;
+}
+.header-menu .header-menu__elem:first-child:visited {
+  color: #1f395a;
+}
+.header-menu .header-menu__elem:visited {
+  color: #464646;
+}
+.header-menu .header-menu__elem:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1279px) {
+  .header-menu {
+    display: none;
+  }
 }

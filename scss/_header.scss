@@ -1,4 +1,43 @@
-.header {
-	position: fixed;
-	display: flex;
+.header{
+position: fixed;
+background: none;
+width: 100%;
+	.header__content{
+		display: flex;
+    justify-content: space-around;
+    margin: 57px;
+    .header__logo{
+      background: none;
+    }
+}
+}
+.header-menu{
+  display: flex;
+  align-items: center;
+  gap: 42px;
+  .header-menu__elem{
+    color: $black;
+    text-transform: uppercase;
+    &:first-child{
+      color: $blue;
+      &:visited{
+        color: $darkblue;
+      }
+    }
+    &:visited{
+      color: $darkgrey;
+    }
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+
+//______________breakpoints
+
+@media (max-width: 1279px) {
+  .header-menu{
+    display: none;
+  }
+
 }
