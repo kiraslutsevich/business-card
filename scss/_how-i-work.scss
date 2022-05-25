@@ -1,0 +1,61 @@
+.how-i-work {
+	width: 100%;
+	background-color: $silver;
+	padding: 100px 0;
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 57px;
+
+	}
+}
+
+
+.video {
+	width: 1110px;
+	height: 600px;
+	position: relative;
+
+	&:hover {
+		.video__overlay {
+			display: block;
+		}
+	}
+
+	@media (max-width: 1279px) {
+		width: 100%;
+		padding: 18px;
+		height: fit-content;
+	}
+
+	&__wrapper {
+		position: relative;
+	}
+
+	&__image {
+		object-fit: cover;
+		width: 100%;
+
+	}
+
+
+
+	&__button {
+		position: absolute;
+		margin: auto;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background: none;
+		z-index: 2;
+
+		.video__icon-play {
+			@media (max-width: 1279px) {
+				height: 75px;
+			}
+		}
+	}
+}

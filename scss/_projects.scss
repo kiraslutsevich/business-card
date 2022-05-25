@@ -1,23 +1,21 @@
-.projects{
+.projects {
 	background-color: $blue;
 	width: 100%;
 	padding: 100px 0;
+
 	@media (max-width: 1279px) {
 		padding: 75px 0;
 	}
-	&__content{
+
+	&__content {
 		display: flex;
 		justify-content: center;
-		align-items: center ;
+		align-items: center;
 		gap: 49px;
 		flex-wrap: wrap;
+
 		@media (max-width: 1279px) {
 			gap: 45px;
 		}
 	}
 }
-// .project-content__icon{
-// 	@media (max-width: 1279px) {
-// 		padding: 18px;
-// 	}
-// }

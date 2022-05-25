@@ -1,0 +1,59 @@
+.offer {
+	padding: 100px 0;
+	background-color: $silver;
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		.offer__text-block {
+			margin-bottom: 65px;
+		}
+	}
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	&__from {
+		display: flex;
+		width: 540px;
+		justify-content: space-between;
+		gap: 30px;
+		margin-bottom: 20px;
+
+		@media (max-width: 1279px) {
+			width: 100%;
+			gap: 22px;
+			flex-direction: column;
+			justify-content: center;
+		}
+	}
+
+	&__name,
+	&__email {
+		width: 255px;
+		height: 50px;
+		text-indent: 20px;
+
+		@media (max-width: 1279px) {
+			width: 100%;
+		}
+	}
+
+	&__text {
+		width: 540px;
+		height: 175px;
+		margin-bottom: 50px;
+		text-indent: 20px;
+		padding-top: 17px;
+
+		@media (max-width: 1279px) {
+			width: 100%;
+			padding: 10px;
+		}
+	}
+}

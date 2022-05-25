@@ -1,0 +1,33 @@
+.pictures {
+	padding: 28px 0;
+
+	&__content {
+		width: 100%;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+
+		@media (max-width: 1279px) {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+}
+
+.elem {
+	position: relative;
+
+	&:hover {
+
+		.elem__overlay,
+		.elem__icon-eye {
+			display: block;
+		}
+	}
+
+	&__pic {
+		width: 100%;
+		object-fit: contain;
+		z-index: -1;
+
+	}
+
+}
