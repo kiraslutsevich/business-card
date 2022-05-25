@@ -161,6 +161,7 @@ h3 {
   overflow: hidden;
   min-height: 100%;
   min-width: 100%;
+  max-width: 1150px;
 }
 
 .header {
@@ -169,8 +170,9 @@ h3 {
 }
 .header__content {
   display: flex;
-  justify-content: space-around;
-  margin: 57px;
+  justify-content: space-between;
+  margin: 57px auto;
+  max-width: 1105px;
 }
 @media (max-width: 1279px) {
   .header__content {
@@ -195,6 +197,7 @@ h3 {
 .header-menu__elem {
   color: #000000;
   text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 .header-menu__elem:first-child {
   color: #34547A;
@@ -231,11 +234,12 @@ h3 {
   }
 }
 .main__content .main__text-block {
-  width: 540px;
+  width: 560px;
   display: flex;
   flex-direction: column;
   gap: 60px;
   align-items: flex-start;
+  padding: 0 0 0 14px;
 }
 @media (max-width: 1279px) {
   .main__content .main__text-block {
@@ -266,6 +270,11 @@ h3 {
   width: 100%;
   padding: 100px 0;
 }
+@media (max-width: 1279px) {
+  .projects {
+    padding: 75px 0;
+  }
+}
 .projects__content {
   display: flex;
   justify-content: center;
@@ -275,10 +284,85 @@ h3 {
 }
 @media (max-width: 1279px) {
   .projects__content {
-    gap: 57px;
+    gap: 45px;
   }
 }
 
-.project-content__icon {
-  padding: 18px;
+.skills {
+  width: 100%;
+  padding: 101px 0;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 1279px) {
+  .skills {
+    padding: 60px 0;
+  }
+}
+.skills__content {
+  display: flex;
+  max-width: 1150px;
+  width: 100%;
+  justify-content: space-between;
+}
+@media (max-width: 1279px) {
+  .skills__content {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.skills__content .skills__text-block {
+  flex: 0 0 50%;
+  text-align: left;
+  align-self: center;
+}
+@media (max-width: 1279px) {
+  .skills__content .skills__text-block {
+    width: 100%;
+    padding: 10%;
+    text-align: center;
+  }
+}
+.skills__content .skills__text-block .text-block__string {
+  margin-bottom: 20px;
+}
+.skills__content__photo {
+  flex: 0 0 50%;
+  align-self: center;
+}
+
+.photo__img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 555px;
+  height: 450px;
+}
+@media (max-width: 1279px) {
+  .photo__img {
+    width: 100%;
+    padding: 0 18px;
+  }
+}
+
+.rectangles {
+  position: relative;
+  width: 445px;
+  height: 4px;
+  background-color: #C4C4C4;
+  margin-bottom: 30px;
+}
+@media (max-width: 1279px) {
+  .rectangles {
+    width: 100%;
+  }
+}
+.rectangles__blue {
+  width: 78%;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  background-color: #34547A;
 }

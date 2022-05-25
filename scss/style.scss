@@ -10,9 +10,11 @@
 	overflow: hidden;
 	min-height: 100%;
 	min-width: 100%;
+	max-width: 1150px;
 }
 
 @import "header";
 @import "main";
 @import "about-me";
 @import "projects";
+@import "skills";

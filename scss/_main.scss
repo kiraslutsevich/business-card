@@ -14,11 +14,12 @@
 			gap: 50px;
 		}
 		.main__text-block{
-			width: 540px;
+			width: 560px;
 			display: flex;
 			flex-direction: column;
 			gap: 60px;
 			align-items: flex-start;
+			padding: 0 0 0 14px;
 			@media (max-width: 1279px) {
 				width: 322px;
 				text-align: center;
