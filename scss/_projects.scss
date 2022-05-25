@@ -1,0 +1,18 @@
+.projects{
+	background-color: $blue;
+	width: 100%;
+	padding: 100px 0;
+	&__content{
+		display: flex;
+		justify-content: center;
+		align-items: center ;
+		gap: 49px;
+		flex-wrap: wrap;
+		@media (max-width: 1279px) {
+			gap: 57px;
+		}
+	}
+}
+.project-content__icon{
+	padding: 18px;
+}
