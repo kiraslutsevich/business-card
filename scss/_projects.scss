@@ -1,21 +1,32 @@
 .projects {
-	background-color: $blue;
-	width: 100%;
-	padding: 100px 0;
+  background-color: $blue;
+  width: 100%;
+  padding: 100px 0;
 
-	@media (max-width: 1279px) {
-		padding: 75px 0;
-	}
+  @media (max-width: 1279px) {
+    padding: 75px 0;
+  }
 
-	&__content {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		gap: 49px;
-		flex-wrap: wrap;
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 49px;
+    flex-wrap: wrap;
 
-		@media (max-width: 1279px) {
-			gap: 45px;
-		}
-	}
+    @media (max-width: 1279px) {
+      gap: 45px;
+    }
+
+    @media (max-width: 1100px) {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.project-content__icon {
+  @media(max-width: 340px) {
+    display: none;
+  }
 }

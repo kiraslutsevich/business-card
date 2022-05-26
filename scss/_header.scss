@@ -1,52 +1,56 @@
 .header {
-	background: $silver;
-	width: 100%;
+  background: $silver;
+  width: 100%;
 
-	&__content {
-		display: flex;
-		justify-content: space-between;
-		margin: 57px auto;
-		max-width: 1105px;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    margin: 57px auto;
+    max-width: 1105px;
 
-		@media (max-width: 1279px) {
-			justify-content: flex-start;
-			margin: 22px;
-		}
+    @media (max-width: 1200px) {
+      justify-content: space-around;
+    }
 
-		.header__logo {
-			background: none;
-		}
-	}
+    @media (max-width: 850px) {
+      justify-content: flex-start;
+      margin: 22px;
+    }
+
+    .header__logo {
+      background: none;
+    }
+  }
 }
 
 .header-menu {
-	display: flex;
-	align-items: center;
-	gap: 42px;
+  display: flex;
+  align-items: center;
+  gap: 42px;
 
-	@media (max-width: 1279px) {
-		display: none;
-	}
+  @media (max-width: 850px) {
+    display: none;
+  }
 
-	&__elem {
-		color: $black;
-		text-transform: uppercase;
-		letter-spacing: 0.1em;
+  &__elem {
+    color: $black;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
 
-		&:first-child {
-			color: $blue;
+    &:first-child {
+      color: $blue;
 
-			&:visited {
-				color: $darkblue;
-			}
-		}
+      &:visited {
+        color: $darkblue;
+      }
+    }
 
-		&:visited {
-			color: $darkgrey;
-		}
+    &:visited {
+      color: $darkgrey;
+    }
 
-		&:hover {
-			text-decoration: underline;
-		}
-	}
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
